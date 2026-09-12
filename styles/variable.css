@@ -2,9 +2,13 @@
     --background-color: #131C26;
     --head-foot-color: #0D1B2A;
     --bookcard-color: #1E2B3A;
+    --commentary-input-color: #2A3B50;
     --main-color: #F4EBDD;
     --price-color: #C7A65A;
     --like-color: #E53935;
-    --main-font:  'Source Sans 3';
+    --main-font: 'Source Sans 3';
     --title-price-font: 'Lora';
+    --content-limitation: 20px max(calc((100% - 1440px)/2), 140px);
+    --border-style: 1px solid #3B526B;
+    --border-corner: 16px;
 }
