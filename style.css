@@ -254,7 +254,7 @@ h2 {
     h1 {
         display: none;
     }
-    
+
     .HeaderSection {
         justify-content: center;
     }
@@ -281,12 +281,12 @@ h2 {
     }
 
     .BookCommentaryInput input {
-    height: 24px;
-    width: 300px;
-    font-size: 0.75rem;
-    border: none;
-    border-radius: 5px;
-}
+        height: 24px;
+        width: 300px;
+        font-size: 0.75rem;
+        border: none;
+        border-radius: 5px;
+    }
 
     .FooterSection {
         flex-direction: column;
