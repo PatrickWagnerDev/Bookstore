@@ -1,0 +1,53 @@
+h1 {
+    font-size: 2rem;
+}
+
+.HeaderSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--head-foot-color);
+    padding: var(--content-limitation);
+    font-weight: bold;
+}
+
+.HeaderSection img {
+    height: 48px;
+}
+
+.MainSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 96px;
+    background-color: var(--background-color);
+    padding: var(--content-limitation);
+}
+
+.FooterSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--head-foot-color);
+    padding: var(--content-limitation);
+    font-weight: bold;
+}
+
+.FooterSection img {
+    height: 32px;
+}
+
+.FooterSection a {
+    color: var(--price-color);
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.FooterSection section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
