@@ -6,6 +6,7 @@
     --main-color: #F4EBDD;
     --price-color: #C7A65A;
     --like-color: #E53935;
+    --commentary-placeholder: #B8C0C8;
     --main-font: 'Source Sans 3';
     --title-price-font: 'Lora';
     --content-limitation: 20px max(calc((100% - 1440px)/2), 140px);
