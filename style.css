@@ -141,6 +141,24 @@ h1 {
     overflow-y: scroll;
 }
 
+.BookCommentarySection::-webkit-scrollbar {
+    width: 8px;
+}
+
+.BookCommentarySection::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 10px;
+}
+
+.BookCommentarySection::-webkit-scrollbar-thumb {
+    background: var(--commentary-placeholder);
+    border-radius: 10px;
+}
+
+.BookCommentarySection::-webkit-scrollbar-thumb:hover {
+        background-color: #8a9097;
+    }
+
 .BookCommentaryInput {
     display: flex;
     align-items: center;
@@ -153,7 +171,8 @@ h1 {
     color: var(--commentary-placeholder);
     height: 32px;
     width: 300px;
-    border: none
+    border: none;
+    border-radius: 5px;
 }
 
 .CommentaryButton {
