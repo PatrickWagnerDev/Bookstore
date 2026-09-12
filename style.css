@@ -8,6 +8,10 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
 .HeaderSection {
     display: flex;
     justify-content: flex-start;
@@ -156,8 +160,8 @@ h1 {
 }
 
 .BookCommentarySection::-webkit-scrollbar-thumb:hover {
-        background-color: #8a9097;
-    }
+    background-color: #8a9097;
+}
 
 .BookCommentaryInput {
     display: flex;
@@ -230,4 +234,61 @@ h1 {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+@media screen and (min-width: 432px) and (max-width: 527px) {
+    .HeaderSection {
+        justify-content: center;
+    }
+
+    .HeaderSection>p {
+        display: none;
+    }
+
+    .FooterSection {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    h1 {
+        display: none;
+    }
+    
+    .HeaderSection {
+        justify-content: center;
+    }
+
+    .HeaderSection p {
+        display: none;
+    }
+
+    .BookCard {
+        height: 600px;
+        width: 288px;
+    }
+
+    .BookPrice {
+        font-size: 1.5rem;
+    }
+
+    .BookData {
+        font-size: 0.75rem;
+    }
+
+    .BookCommentarySection {
+        font-size: 0.75rem;
+    }
+
+    .BookCommentaryInput input {
+    height: 24px;
+    width: 300px;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 5px;
+}
+
+    .FooterSection {
+        flex-direction: column;
+    }
 }
