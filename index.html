@@ -27,29 +27,27 @@
         </p>
     </header>
     <main class="MainSection">
-        <!-- Hier kommen die einzelnen Section mit den Büchern rein -->
-        <!-- Beispiel Sektionsaufbau: -->
-        <section>
-            <header>
+        <section class="BookCard">
+            <header class="BookHeader">
                 <h2>
                     Die Geheimnisse des Ozeans
                 </h2>
             </header>
-            <figure>
+            <figure class="BookImage">
                 <img src="./assets/image/Die_Geheimnisse_des_Ozeans.webp" alt="Die Geheimnisse des Ozeans">
             </figure>
-            <main>
-                <section>
-                    <p>
-                        19,99 €
+            <main class="BookInfo">
+                <section class="BookPriceLikes"">
+                    <p class=" BookPrice">
+                    19,99 €
                     </p>
-                    <p>
+                    <p class="BookLikes">
                         1250
-                        <img src="./assets/icons/heart_outline.png" alt="Hohles Herz">
-                        <img src="./assets/icons/heart_filled.png" alt="Ausgefülltes Herz">
+                        <img class="NoLike" src="./assets/icons/heart_outline.png" alt="Hohles Herz">
+                        <img class="YesLike" src="./assets/icons/heart_filled.png" alt="Ausgefülltes Herz">
                     </p>
                 </section>
-                <table>
+                <table class="BookData">
                     <tr>
                         <th>
                             Author
@@ -76,11 +74,11 @@
                     </tr>
                 </table>
             </main>
-            <footer>
+            <footer class="BookFooter">
                 <h3>
                     Kommentare:
                 </h3>
-                <section>
+                <section class="BookCommentarySection">
                     <table>
                         <tr>
                             <th>
@@ -107,14 +105,17 @@
                             </td>
                         </tr>
                     </table>
-                    <section>
-                        <input type="text" value="Schreibe dein Kommentar ....">
-                        <img aria-label="Kommentar-Button" src="./assets/icons/paper_plane_outline_light.png"
-                            alt="Kommentar Abschicken Button">
-                        <img aria-label="Kommentar-Button" src="./assets/icons/paper_plane_filled_light.png"
-                            alt="Kommentar Abschicken Button">
-                    </section>
                 </section>
+                <section class="BookCommentaryInput">
+                    <input type="text" value="Schreibe dein Kommentar ....">
+                    <button aria-label="send Commentary" class="CommentaryButton">
+                        <img class="CommentaryArrow CommentaryArrowOutline" aria-label="Kommentar-Button"
+                            src="./assets/icons/paper_plane_outline_light.png" alt="Kommentar Abschicken Button">
+                        <img class="CommentaryArrow CommentaryArrowFilled" aria-label="Kommentar-Button"
+                            src="./assets/icons/paper_plane_filled_light.png" alt="Kommentar Abschicken Button">
+                    </button>
+                </section>
+
             </footer>
         </section>
     </main>
