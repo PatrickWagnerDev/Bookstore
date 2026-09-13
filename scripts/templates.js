@@ -50,7 +50,7 @@ function templateBookcard(i) {
                     Kommentare:
                 </h3>
                 <section class="BookCommentarySection">
-                    <table id="book-commentary">
+                    <table>
                         ${renderCommentary(i)}
                     </table>
                 </section>

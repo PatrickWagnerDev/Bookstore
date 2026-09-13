@@ -1,5 +1,4 @@
 const MY_BOOKS = document.getElementById('bookcard-area');
-const COMMENTARYS = document.getElementById('book-commentary');
 
 function init() {
 
@@ -43,4 +42,8 @@ function likeBook(i) {
         books[i].liked = true;
     }
     renderBookcard();
+}
+
+function addCommentary() {
+
 }
