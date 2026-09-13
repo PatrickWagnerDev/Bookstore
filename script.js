@@ -1,7 +1,7 @@
 const MY_BOOKS = document.getElementById('bookcard-area');
 
 function init() {
-
+    getBookFromLocalStorage();
     renderBookcard();
 }
 
@@ -41,6 +41,7 @@ function likeBook(i) {
         books[i].likes++;
         books[i].liked = true;
     }
+    saveBookToLocalStorage();
     renderBookcard();
 }
 
@@ -50,5 +51,18 @@ function addCommentary(i) {
     if (commetInputRef.value != "") {
         books[i].comments.unshift(commetInput);
     }
+    saveBookToLocalStorage();
     renderBookcard();
+}
+
+function saveBookToLocalStorage() {
+    localStorage.setItem("books", JSON.stringify(books));
+}
+
+function getBookFromLocalStorage() {
+    let myBooks = JSON.parse(localStorage.getItem("books"));
+
+    if (myBooks != null) {
+        books = myBooks;
+    }
 }
