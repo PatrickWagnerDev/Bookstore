@@ -12,12 +12,10 @@ function templateBookcard(i) {
             <main class="BookInfo">
                 <section class="BookPriceLikes"">
                     <p class=" BookPrice">
-                    ${books[i].price.toFixed(2).replace(".",",")} €
+                    ${books[i].price.toFixed(2).replace(".", ",")} €
                     </p>
                     <p class="BookLikes">
-                        ${books[i].likes}
-                        <img class="NoLike" src="./assets/icons/heart_outline.png" alt="Hohles Herz">
-                        <img class="YesLike" src="./assets/icons/heart_filled.png" alt="Ausgefülltes Herz">
+                        ${isBookLiked(i)}
                     </p>
                 </section>
                 <table class="BookData">
@@ -90,5 +88,19 @@ function templateBookcard(i) {
                 </section>
             </footer>
         </section>
-    `
+    `;
+}
+
+function templateLiked(i) {
+    return /*html*/`
+        ${books[i].likes}
+            <img class="YesLike" src="./assets/icons/heart_filled.png" alt="Ausgefülltes Herz">           
+    `;
+}
+
+function templateNotLiked(i) {
+    return /*html*/`
+        ${books[i].likes}
+            <img class="NoLike" src="./assets/icons/heart_outline.png" alt="Hohles Herz">           
+    `;
 }
