@@ -7,6 +7,7 @@ let books = [
       "price": 19.99,
       "publishedYear": 2018,
       "genre": "Fantasy",
+      "cover": "./assets/image/Die_Geheimnisse_des_Ozeans.webp",
       "comments": [
         {
           "name": "Leser123",
@@ -38,6 +39,7 @@ let books = [
       "price": 14.50,
       "publishedYear": 2021,
       "genre": "Fantasy",
+      "cover": "./assets/image/Der_vergessene_Pfad.webp",
       "comments": []
     },
     {
@@ -48,6 +50,7 @@ let books = [
       "price": 22.95,
       "publishedYear": 2019,
       "genre": "Romantik",
+      "cover": "./assets/image/Die_Farben_des_Himmels.webp",
       "comments": [
         {
           "name": "LeserPeter",
@@ -79,6 +82,7 @@ let books = [
       "price": 18.00,
       "publishedYear": 2020,
       "genre": "Science-Fiction",
+      "cover": "./assets/image/Das_Rätsel_der_Zeit.webp",
       "comments": [
         {
           "name": "BuchKenner",
@@ -98,6 +102,7 @@ let books = [
       "price": 16.75,
       "publishedYear": 2017,
       "genre": "Fantasy",
+      "cover": "./assets/image/Der_letzte_Wächter.webp",
       "comments": []
     },
     {
@@ -108,6 +113,7 @@ let books = [
       "price": 12.30,
       "publishedYear": 2022,
       "genre": "Science-Fiction",
+      "cover": "./assets/image/Im_Schatten_des_Mondes.webp",
       "comments": [
         {
           "name": "BücherLiebhaber",
@@ -127,6 +133,7 @@ let books = [
       "price": 21.00,
       "publishedYear": 2015,
       "genre": "Science-Fiction",
+      "cover": "./assets/image/Jenseits_der_Sterne.webp",
       "comments": [
         {
           "name": "Leser123",
@@ -135,13 +142,14 @@ let books = [
       ]
     },
     {
-      "name": "Das verborgene Königreich",
+      "name": "Das_verborgene_Königreich.webp",
       "author": "Elena Gold",
       "likes": 920,
       "liked": false,
       "price": 17.50,
       "publishedYear": 2020,
       "genre": "Fantasy",
+      "cover": "./assets/image/Das_verborgene_Königreich.webp",
       "comments": [
         {
           "name": "Bookworm92",
@@ -157,6 +165,7 @@ let books = [
       "price": 19.99,
       "publishedYear": 2016,
       "genre": "Romantik",
+      "cover": "./assets/image/Liebe_in_Zeiten_des_Krieges.webp",
       "comments": [
         {
           "name": "Bibliophile23",
