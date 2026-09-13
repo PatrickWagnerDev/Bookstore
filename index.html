@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="./styles/standard.css">
     <link rel="stylesheet" href="./style.css">
 
-    <script src="./scripts/data_base.js"></script>
-    <script src="./scripts/templates.js"></script>
-    <script src="./script.js"></script>
+
 </head>
 
-<body>
+<body onload="init()">
     <header class="HeaderSection">
         <img src="./assets/icons/bookstore_logo.png" alt="PW-Bookstore Logo">
         <h1>
@@ -27,8 +25,8 @@
             - get your book here
         </p>
     </header>
-    <main class="MainSection">
-        <section class="BookCard">
+    <main class="MainSection" id="bookcard-area">
+        <!-- <section class="BookCard">
             <header class="BookHeader">
                 <h2>
                     Die Geheimnisse des Ozeans
@@ -117,7 +115,7 @@
                     </button>
                 </section>
             </footer>
-        </section>
+        </section> -->
     </main>
     <footer class="FooterSection">
         <section>
@@ -133,5 +131,9 @@
         </section>
     </footer>
 </body>
+
+<script src="./scripts/data_base.js"></script>
+<script src="./scripts/templates.js"></script>
+<script src="./script.js"></script>
 
 </html>
