@@ -88,7 +88,6 @@ h2 {
     align-items: center;
     gap: 16px;
     font-weight: bold;
-    color: var(--like-color);
 }
 
 .NoLike {
