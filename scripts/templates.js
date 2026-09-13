@@ -94,13 +94,13 @@ function templateBookcard(i) {
 function templateLiked(i) {
     return /*html*/`
         ${books[i].likes}
-            <img class="YesLike" src="./assets/icons/heart_filled.png" alt="Ausgefülltes Herz">           
+            <img class="YesLike" onclick="likeBook(${i})" src="./assets/icons/heart_filled.png" alt="Ausgefülltes Herz">           
     `;
 }
 
 function templateNotLiked(i) {
     return /*html*/`
         ${books[i].likes}
-            <img class="NoLike" src="./assets/icons/heart_outline.png" alt="Hohles Herz">           
+            <img class="NoLike" onclick="likeBook(${i})" src="./assets/icons/heart_outline.png" alt="Hohles Herz">           
     `;
 }

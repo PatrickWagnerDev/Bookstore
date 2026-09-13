@@ -22,10 +22,12 @@ function isBookLiked(i) {
 }
 
 function likeBook(i) {
-    let maybeLiked = "";
     if (books[i].liked == true) {
-        maybeLiked = templateChangeToNotLiked(i);
+        books[i].likes--;
+        books[i].liked = false;
     } else {
-        maybeLiked = templateChangeToLiked(i);
+        books[i].likes++;
+        books[i].liked = true;
     }
+    renderBookcard();
 }
