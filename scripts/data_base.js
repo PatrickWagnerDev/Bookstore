@@ -142,7 +142,7 @@ let books = [
       ]
     },
     {
-      "name": "Das_verborgene_Königreich.webp",
+      "name": "Das verborgene Königreich",
       "author": "Elena Gold",
       "likes": 920,
       "liked": false,

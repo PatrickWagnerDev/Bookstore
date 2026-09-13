@@ -1,15 +1,27 @@
 const MY_BOOKS = document.getElementById('bookcard-area');
+const COMMENTARYS = document.getElementById('book-commentary');
 
 function init() {
-    
+
     renderBookcard();
 }
 
 function renderBookcard() {
     MY_BOOKS.innerHTML = "";
     for (let i = 0; i < books.length; i++) {
-        MY_BOOKS.innerHTML += templateBookcard(i);        
+        MY_BOOKS.innerHTML += templateBookcard(i);
     }
+}
+
+function renderCommentary(i) {
+    let myCommets = "";
+    if (books[i].comments == null) {
+    } else {
+        for (let index = 0; index < books[i].comments.length; index++) {
+            myCommets += templateCommentary(i, index);
+        }
+    }
+    return myCommets;
 }
 
 function isBookLiked(i) {

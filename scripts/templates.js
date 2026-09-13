@@ -50,31 +50,8 @@ function templateBookcard(i) {
                     Kommentare:
                 </h3>
                 <section class="BookCommentarySection">
-                    <table>
-                        <tr>
-                            <th>
-                                [Leser123]
-                            </th>
-                            <td>
-                                Ein faszinierendes Abenteuerbuch, das mich von der ersten SEite an gefesselt hat.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                [Leser123]
-                            </th>
-                            <td>
-                                Ein faszinierendes Abenteuerbuch, das mich von der ersten SEite an gefesselt hat.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                [Leser123]
-                            </th>
-                            <td>
-                                Ein faszinierendes Abenteuerbuch, das mich von der ersten SEite an gefesselt hat.
-                            </td>
-                        </tr>
+                    <table id="book-commentary">
+                        ${renderCommentary(i)}
                     </table>
                 </section>
                 <section class="BookCommentaryInput">
@@ -102,5 +79,18 @@ function templateNotLiked(i) {
     return /*html*/`
         ${books[i].likes}
             <img class="NoLike" onclick="likeBook(${i})" src="./assets/icons/heart_outline.png" alt="Hohles Herz">           
+    `;
+}
+
+function templateCommentary(i, a) {
+    return /*html*/`
+        <tr>
+            <th>
+                [${books[i].comments[a].name}]
+            </th>
+            <td>
+                ${books[i].comments[a].comment}
+            </td>
+        </tr>
     `;
 }
