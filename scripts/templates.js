@@ -55,12 +55,12 @@ function templateBookcard(i) {
                     </table>
                 </section>
                 <section class="BookCommentaryInput">
-                    <input type="text" value=" Schreibe dein Kommentar ....">
+                    <input id="commentary_input${i}" type="text" placeholder=" Schreibe dein Kommentar ....">
                     <button aria-label="send Commentary" class="CommentaryButton">
                         <img class="CommentaryArrow CommentaryArrowOutline" aria-label="Kommentar-Button"
-                            src="./assets/icons/paper_plane_outline_light.png" alt="Kommentar Abschicken Button">
+                            src="./assets/icons/paper_plane_outline_light.png" onclick="addCommentary(${i})" alt="Kommentar Abschicken Button">
                         <img class="CommentaryArrow CommentaryArrowFilled" aria-label="Kommentar-Button"
-                            src="./assets/icons/paper_plane_filled_light.png" alt="Kommentar Abschicken Button">
+                            src="./assets/icons/paper_plane_filled_light.png" onclick="addCommentary(${i})" alt="Kommentar Abschicken Button">
                     </button>
                 </section>
             </footer>

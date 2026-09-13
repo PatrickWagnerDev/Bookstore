@@ -44,6 +44,11 @@ function likeBook(i) {
     renderBookcard();
 }
 
-function addCommentary() {
-
+function addCommentary(i) {
+    let commetInputRef = document.getElementById('commentary_input' + i);
+    let commetInput = {"name": "NewGuy","comment": commetInputRef.value};
+    if (commetInputRef.value != "") {
+        books[i].comments.unshift(commetInput);
+    }
+    renderBookcard();
 }
