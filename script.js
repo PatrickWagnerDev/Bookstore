@@ -6,6 +6,7 @@ function init() {
 }
 
 function renderBookcard() {
+    MY_BOOKS.innerHTML = "";
     for (let i = 0; i < books.length; i++) {
         MY_BOOKS.innerHTML += templateBookcard(i);        
     }
