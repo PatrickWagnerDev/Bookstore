@@ -19,7 +19,7 @@ Bookstore is a small web app and bootcamp exam project for practicing how to rea
 
 ## Project Status
 
-> **Current Status:** Completed – Submitted for Review
+> **Current Status:** Completed
 <!--
 PROJECT STATUS:
 Update only the "Current Status" and the text above whenever the project progresses.
